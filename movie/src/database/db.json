@@ -1,0 +1,26 @@
+{
+
+    "movie":[{
+        "name":"sandeep",
+        "number":"8602648550",
+        "Email":"sandeep@gmail.com",
+        "date":"22-10-2026",
+        "location":"bhopal",
+        "cenima":"pvr"
+    },{
+        "name":"mohit",
+        "number":"8602648780",
+        "Email":"mohit@gmail.com",
+        "date":"23-10-2026",
+        "location":"bhopal",
+        "cenima":"pvr"
+    },{
+        "name":"shivam",
+        "number":"8602678520",
+        "Email":"shivam@gmail.com",
+        "date":"25-10-2026",
+        "location":"bhopal",
+        "cenima":"ddx"
+    }]
+
+}
