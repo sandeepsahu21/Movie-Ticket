@@ -6,7 +6,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 const Layout = () => {
   return (
     <div className="min-h-screen flex flex-col text-white">
-      <header className="bg-black/60 backdrop-blur-md px-10 py-3 flex items-center justify-between">
+      <header className="bg-black/50 backdrop-blur-md px-10 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img src="/icon.png" alt="logo" className="w-10 h-10" />
           <h1 className="text-2xl font-bold tracking-wide">MovieTicket</h1>
@@ -23,7 +23,7 @@ const Layout = () => {
         </div>
 
         <nav>
-          <ul className="flex gap-6 text-lg font-light">
+          <ul className="flex gap-6 text-lg font-light ">
             <li className="flex">
               <NavLink
                 to="/"

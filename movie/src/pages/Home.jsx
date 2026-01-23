@@ -2,7 +2,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
+
 const Home = () => {
+    
   return (
     <>
       <main className="flex-1 ">
@@ -17,7 +19,7 @@ const Home = () => {
             <source src="/video.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 `bg-gradient-to-b` from-black/70 via-black/50 to-black/80"></div>
+          <div className="absolute inset-0 `bg-gradient-to-b` from-black/70 via-black/50 to-black/80 backdrop-blur-xs"></div>
 
           <div className="relative z-10 text-center max-w-4xl px-6">
             <h1 className="text-5xl md:text-6xl font-extrabold mb-5 leading-tight">
@@ -49,7 +51,7 @@ const Home = () => {
 
           <Swiper slidesPerView={4} spaceBetween={100}>
             <SwiperSlide>
-              <div className="bg-black/60 backdrop-blur-md p-4 rounded-lg w-70 h-90 text-white shadow-lg">
+              <div className="bg-black/60 backdrop-blur-md p-4 ml-6 rounded-lg w-70 h-90 text-white shadow-lg">
                 <img
                   src="/dhura.jpeg"
                   className="w-65 h-40 object-cover rounded-md mb-4"
@@ -58,7 +60,7 @@ const Home = () => {
                 <p className="text-sm mb-4">
                   A brief description of the movie.
                 </p>
-                <button className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded-lg">
+                <button className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded-lg ">
                   Book Now
                 </button>
               </div>

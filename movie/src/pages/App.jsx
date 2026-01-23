@@ -7,6 +7,7 @@ import Login from '../pages/Login'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
 import Mybooking from './Mybooking'
+
 const App = () => {
   return (
     <>
