@@ -16,7 +16,8 @@ const Login = () => {
 
   return (
     <>
-    <div className="Login-box max-w-md mx-auto my-30  bg-black/60 backdrop-blur-md p-8 rounded-lg text-white">
+    <div className="min-h-screen flex items-center justify-center bg-[url('/bg.jpg')] bg-cover bg-center">
+    <div className="Login-box max-w-md mx-auto my-30  bg-black/60 backdrop-blur-md  p-8 rounded-lg text-white">
       <form >
         <h2 className="text-2xl font-bold mb-6 text-center">Login to Your Account</h2>
         <div className="mb-4">
@@ -32,6 +33,7 @@ const Login = () => {
       <p className="text-center mt-4">
         Don't have an account? <a href="/signup" className="text-yellow-400 hover:underline">Sign Up</a>
       </p>
+      </div>
       </div>
     </>
   )
