@@ -1,10 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
-    
+    let navigate=useNavigate();
   return (
     <>
       <main className="flex-1 ">
@@ -60,7 +61,7 @@ const Home = () => {
                 <p className="text-sm mb-4">
                   A brief description of the movie.
                 </p>
-                <button className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded-lg ">
+                <button className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded-lg " onClick={navigate("/Bookingform")}>
                   Book Now
                 </button>
               </div>

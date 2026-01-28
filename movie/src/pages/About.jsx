@@ -13,7 +13,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[url('/bg.jpg')] bg-cover bg-center text-white px-6 py-10">
+    <div className="min-h-screen bg-[url('/movie.jpg')]  bg-cover bg-center text-white px-6 py-10">
 
       <h1 className="text-4xl font-bold text-center mb-8 about-box">
         About Us

@@ -61,7 +61,7 @@ const Signup = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[url('/bg.jpg')] bg-cover bg-center">
+    <div className="min-h-screen flex items-center justify-center bg-[url('/movie.jpg')] bg-cover bg-center">
 
       <div className="signup-box bg-black/70 backdrop-blur-lg p-8 rounded-2xl w-full max-w-md text-white shadow-2xl">
 

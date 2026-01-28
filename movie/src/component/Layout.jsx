@@ -101,6 +101,19 @@ const Layout = () => {
                 My Booking
               </NavLink>
             </li>
+
+            <li>
+              <NavLink
+                to="/BookNow"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-400 border-b-2 border-yellow-400"
+                    : "hover:text-yellow-300 "
+                }
+              >
+               <span className=" px-3 py-1.5 bg-yellow-400 text-white rounded-lg  hover:bg-yellow-500">BookNow</span> 
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </header>
