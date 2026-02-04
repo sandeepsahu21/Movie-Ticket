@@ -71,45 +71,45 @@ const Signup = () => {
           <div>
             <label className="block mb-1 text-sm">Name</label>
             <input type="text" name="name" value={Form.name} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-yellow-400"
+              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
               placeholder="Enter your name"/>
           </div>
           
           <div>
             <label className="block mb-1 text-sm">Email</label>
             <input type="email" name="Email" value={Form.Email} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-yellow-400"
+              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
               placeholder="Enter your email"/>
           </div>
 
           <div>
             <label className="block mb-1 text-sm">Phone Number</label>
             <input type="tel" name="Phoneno" value={Form.Phoneno} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-yellow-400"
+              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
               placeholder="Enter phone number"/>
           </div>
 
           <div>
             <label className="block mb-1 text-sm">Password</label>
             <input type="password" name="password" value={Form.password} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-yellow-400"
+              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
               placeholder="Enter password"/>
           </div>
 
           <div>
             <label className="block mb-1 text-sm">Confirm Password</label>
             <input type="password" name="confirmpassword" value={Form.confirmpassword} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-yellow-400"
+              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
               placeholder="Confirm password"/>
           </div>
 
           <button type="submit"
-            className="w-full bg-yellow-400 text-black font-semibold py-2 rounded-lg hover:bg-yellow-500 transition duration-300" > Signup
+            className="w-full bg-red-500 text-black font-semibold py-2 rounded-lg hover:bg-red-500 transition duration-300" > Signup
           </button>
 
         </form>
         <p className="text-center mt-4">
-          Already have an account? <a href="/login" className="text-yellow-400 hover:underline">Login</a>
+          Already have an account? <a href="/login" className="text-red-500 hover:underline">Login</a>
         </p>
       </div>
     </div>

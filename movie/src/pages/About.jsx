@@ -23,12 +23,12 @@ const About = () => {
       <div className="max-w-4xl mx-auto bg-black/60 backdrop-blur-md p-8 rounded-xl shadow-lg about-box">
 
         <p className="text-lg mb-4">
-          <span className="font-semibold text-yellow-400">MovieTime</span> is a
+          <span className="font-semibold text-red-500">MovieTime</span> is a
           modern movie ticket booking platform where users can easily explore
           the latest movies, show timings, and book their seats online.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-6 mb-2 text-yellow-400">
+        <h2 className="text-2xl font-semibold mt-6 mb-2 text-red-500">
           Our Aim
         </h2>
         <p className="mb-4">
@@ -36,7 +36,7 @@ const About = () => {
           experience for everyone.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-6 mb-2 text-yellow-400">
+        <h2 className="text-2xl font-semibold mt-6 mb-2 text-red-500">
           What We Offer
         </h2>
         <ul className="list-disc list-inside space-y-1">
@@ -47,7 +47,7 @@ const About = () => {
           <li>Mobile-friendly design</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mt-6 mb-2 text-yellow-400">
+        <h2 className="text-2xl font-semibold mt-6 mb-2 text-red-500">
           Technologies Used
         </h2>
         <ul className="list-disc list-inside space-y-1">

@@ -29,7 +29,7 @@ setFormData({ ...formData, [name]: value });
 
 const handleSubmit = (e) => {
 e.preventDefault();
-alert(`Booking Confirmed!\n\nName: ${formData.name}\nMovie: ${formData.movie}\nDate: ${formData.date}\nTime: ${formData.time}\nSeats: ${formData.seats}`);
+alert('Booking Confirmed');
 };
   return (
     <>
@@ -131,7 +131,7 @@ className="w-full p-2 rounded bg-gray-800 border border-gray-700"
 
 <button
 type="submit"
-className="w-full bg-yellow-400 hover:bg-yellow-500 transition p-3 rounded-xl font-semibold"
+className="w-full bg-red-500 hover:bg-red-500 transition p-3 rounded-xl font-semibold"
 >
 Book Now
 </button>

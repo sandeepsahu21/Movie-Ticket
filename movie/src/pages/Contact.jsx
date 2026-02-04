@@ -19,7 +19,7 @@ const Contact = () => {
 
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
         <div className="bg-black/60 backdrop-blur-md p-8 rounded-xl shadow-lg contact-box">
-          <h2 className="text-2xl font-semibold mb-4 text-yellow-400">
+          <h2 className="text-2xl font-semibold mb-4 text-red-500">
             Get in Touch
           </h2>
 
@@ -41,7 +41,7 @@ const Contact = () => {
         </div>
 
         <div className="bg-black/60 backdrop-blur-md p-8 rounded-xl shadow-lg contact-box">
-          <h2 className="text-2xl font-semibold mb-4 text-yellow-400">
+          <h2 className="text-2xl font-semibold mb-4 text-red-500">
             Send a Message
           </h2>
 
@@ -64,7 +64,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-yellow-400 text-black font-semibold py-3 rounded hover:bg-yellow-500 transition"
+              className="w-full bg-red-500 text-black font-semibold py-3 rounded hover:bg-red-500 transition"
             >
               Send Message
             </button>
