@@ -1,119 +1,183 @@
-import React, { useState,useEffect} from 'react'
+import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
 
 const Signup = () => {
-    useEffect(() => {
+  useEffect(() => {
     gsap.from(".signup-box", {
-      y: 50,
+      y: 60,
       opacity: 0,
       duration: 1,
-      stagger: 0.3,
+      ease: "power3.out",
     });
   }, []);
 
-  let [Form, setForm] = useState({
-    name: '',
-    Email: '',
-    Phoneno: '',
-    password: '',
-    confirmpassword: '',
-  })
+  const [Form, setForm] = useState({
+    name: "",
+    Email: "",
+    Phoneno: "",
+    password: "",
+    confirmpassword: "",
+  });
 
-  let handlechange = (e) => {
-    setForm({ ...Form, [e.target.name]: e.target.value })
-  }
+  const handlechange = (e) => {
+    setForm({ ...Form, [e.target.name]: e.target.value });
+  };
 
-  let handlesubmit = (e) => {
-    e.preventDefault()
+  const handlesubmit = (e) => {
+    e.preventDefault();
 
-    let valid = true
+    let valid = true;
 
-    if (Form.name.trim() === '') {
-      alert('please enter name')
-      valid = false
+    if (Form.name.trim() === "") {
+      alert("please enter name");
+      valid = false;
     } else if (isNaN(Form.Phoneno)) {
-      alert('please enter number only')
-      valid = false
-    } else if (!Form.Email.includes('@')) {
-      alert('please enter valid email')
-      valid = false
+      alert("please enter number only");
+      valid = false;
+    } else if (!Form.Email.includes("@")) {
+      alert("please enter valid email");
+      valid = false;
     } else if (Form.password.length < 6) {
-      alert('password must be at least 6 characters')
-      valid = false
+      alert("password must be at least 6 characters");
+      valid = false;
     } else if (Form.password !== Form.confirmpassword) {
-      alert('passwords do not match')
-      valid = false
+      alert("passwords do not match");
+      valid = false;
     }
 
     if (valid) {
-      let users = JSON.parse(localStorage.getItem('users')) || []
-      let alreadyExists = users.find((e) => e.Email === Form.Email)
+      let users = JSON.parse(localStorage.getItem("users")) || [];
+      let alreadyExists = users.find((e) => e.Email === Form.Email);
 
       if (alreadyExists) {
-        alert('user already exists')
-        return
+        alert("user already exists");
+        return;
       } else {
-        users.push(Form)
-        localStorage.setItem('users', JSON.stringify(users))
-        alert('signup successful')
+        users.push(Form);
+        localStorage.setItem("users", JSON.stringify(users));
+        alert("signup successful");
       }
     }
-  }
+  };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[url('/movie.jpg')] bg-cover bg-center">
+    <>
+   
+      <div className="min-h-screen relative flex items-center justify-center overflow-hidden">
+        
+        
+        <div className="absolute inset-0 bg-[url('/movie.jpg')] bg-cover bg-center scale-110"></div>
 
-      <div className="signup-box bg-black/70 backdrop-blur-lg p-8 rounded-2xl w-full max-w-md text-white shadow-2xl">
+      
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90"></div>
 
-        <h1 className="text-3xl font-bold text-center mb-6">Create Account</h1>
+      
+        <div className="signup-box relative z-10 w-full max-w-md mx-4 bg-black/60 backdrop-blur-xl
+        border border-white/10 p-8 rounded-2xl shadow-2xl shadow-red-500/20 text-white">
 
-        <form onSubmit={handlesubmit} className="space-y-4">
-          <div>
-            <label className="block mb-1 text-sm">Name</label>
-            <input type="text" name="name" value={Form.name} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
-              placeholder="Enter your name"/>
-          </div>
+       
+          <h1 className="text-3xl font-extrabold text-center mb-2">
+            Create Account 🎟️
+          </h1>
+          <p className="text-center text-gray-400 mb-8 text-sm">
+            Join & book movies instantly
+          </p>
+
+          <form onSubmit={handlesubmit} className="space-y-4">
+
+         
+            <div>
+              <label className="block mb-1 text-sm text-gray-300">Name</label>
+              <input
+                type="text"
+                name="name"
+                value={Form.name}
+                onChange={handlechange}
+                placeholder="Enter Your name"
+                className="w-full px-4 py-3 rounded-xl bg-black/70 border border-gray-700
+                focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500"
+              />
+            </div>
+
           
-          <div>
-            <label className="block mb-1 text-sm">Email</label>
-            <input type="email" name="Email" value={Form.Email} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
-              placeholder="Enter your email"/>
-          </div>
+            <div>
+              <label className="block mb-1 text-sm text-gray-300">Email</label>
+              <input
+                type="email"
+                name="Email"
+                value={Form.Email}
+                onChange={handlechange}
+                placeholder=" Enter your email"
+                className="w-full px-4 py-3 rounded-xl bg-black/70 border border-gray-700
+                focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500"
+              />
+            </div>
 
-          <div>
-            <label className="block mb-1 text-sm">Phone Number</label>
-            <input type="tel" name="Phoneno" value={Form.Phoneno} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
-              placeholder="Enter phone number"/>
-          </div>
+        
+            <div>
+              <label className="block mb-1 text-sm text-gray-300">Phone</label>
+              <input
+                type="tel"
+                name="Phoneno"
+                value={Form.Phoneno}
+                onChange={handlechange}
+                placeholder=" Enter your number"
+                className="w-full px-4 py-3 rounded-xl bg-black/70 border border-gray-700
+                focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500"
+              />
+            </div>
 
-          <div>
-            <label className="block mb-1 text-sm">Password</label>
-            <input type="password" name="password" value={Form.password} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
-              placeholder="Enter password"/>
-          </div>
+        
+            <div>
+              <label className="block mb-1 text-sm text-gray-300">Password</label>
+              <input
+                type="password"
+                name="password"
+                value={Form.password}
+                onChange={handlechange}
+                placeholder="••••••••"
+                className="w-full px-4 py-3 rounded-xl bg-black/70 border border-gray-700
+                focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500"
+              />
+            </div>
 
-          <div>
-            <label className="block mb-1 text-sm">Confirm Password</label>
-            <input type="password" name="confirmpassword" value={Form.confirmpassword} onChange={handlechange}
-              className="w-full px-4 py-2 rounded-lg bg-gray-900/80 border border-gray-600 focus:outline-none focus:border-red-500"
-              placeholder="Confirm password"/>
-          </div>
+           
+            <div>
+              <label className="block mb-1 text-sm text-gray-300">
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                name="confirmpassword"
+                value={Form.confirmpassword}
+                onChange={handlechange}
+                placeholder="••••••••"
+                className="w-full px-4 py-3 rounded-xl bg-black/70 border border-gray-700
+                focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500"
+              />
+            </div>
 
-          <button type="submit"
-            className="w-full bg-red-500 text-black font-semibold py-2 rounded-lg hover:bg-red-500 transition duration-300" > Signup
-          </button>
+         
+            <button
+              type="submit"
+              className="w-full bg-red-500 hover:bg-red-600 text-black font-bold py-3
+              rounded-xl transition shadow-lg shadow-red-500/40"
+            >
+              Sign Up
+            </button>
+          </form>
 
-        </form>
-        <p className="text-center mt-4">
-          Already have an account? <a href="/login" className="text-red-500 hover:underline">Login</a>
-        </p>
+        
+          <p className="text-center mt-6 text-sm text-gray-400">
+            Already have an account?{" "}
+            <a href="/login" className="text-red-500 hover:underline font-semibold">
+              Login
+            </a>
+          </p>
+        </div>
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Signup
+export default Signup;

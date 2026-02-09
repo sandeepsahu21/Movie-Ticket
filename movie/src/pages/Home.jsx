@@ -54,7 +54,7 @@ const Home = () => {
   </h2>
 </div>
 
-          <div className="w-full h-[90vh]  bg-black/70 backdrop-blur-md py-10  ">
+          <div className="w-full h-[90vh]  bg-black/70 backdrop-blur-md py-10 -mt-2 ">
             <Swiper
               modules={[Navigation, Pagination]}
               navigation
@@ -155,7 +155,7 @@ const Home = () => {
               <div className="bg-black/60 backdrop-blur-md p-4 ml-6 rounded-lg w-70 h-90 text-white shadow-lg overflow-visible
                       transition-transform duration-300 hover:scale-105">
                 <img
-                  src="/dhura.jpeg"
+                  src="/dhurandar2.webp"
                   className="w-65 h-45 object-cover rounded-md mb-4"
                 />
                 <h2 className="text-xl font-bold mb-2">Dhurandar</h2>
@@ -236,11 +236,11 @@ const Home = () => {
         <div className=" bg-black/70 backdrop-blur-md py-10">
           <Swiper slidesPerView={4} spaceBetween={90}>
             <SwiperSlide>
-              <div className="bg-black/60 backdrop-blur-md p-4 ml-6 rounded-lg w-70 h-100 text-white shadow-lg
+              <div className="bg-black/60 backdrop-blur-md p-4 ml-6 rounded-lg w-70 h-90 text-white shadow-lg
               transition-transform duration-300 hover:scale-105">
                 <img
                   src="/mujhse dosti karogi.jpg"
-                  className="w-65 h-65 object-cover rounded-md mb-4"
+                  className="w-65 h-45 object-cover rounded-md mb-4"
                 />
                 <h2 className="text-xl font-bold mb-2">Mujhse dosti karogi</h2>
                 <p className="text-sm mb-4">
@@ -279,7 +279,7 @@ const Home = () => {
               <div className="bg-black/60 backdrop-blur-md p-4 rounded-lg w-70 h-90 text-white shadow-lg
               transition-transform duration-300 hover:scale-105">
                 <img
-                  src="/mayasabha.jpg"
+                  src="/maya2.webp"
                   className="w-65 h-45 object-cover rounded-md mb-4"
                 />
                 <h2 className="text-xl font-bold mb-2">Mayasabha</h2>

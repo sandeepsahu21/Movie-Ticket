@@ -25,48 +25,70 @@
       "id": "8e0e"
     },
     {
-    "userName": "Rahul Sharma",
-    "movieName": "Dhurandar",
-    "theatre": "PVR Cinemas",
-    "showDate": "2026-01-25",
-    "seatCount": 2,
-    "pricePerSeat": 250,
-    "totalAmount": 500,
-    "paymentStatus": "Paid",
-    "bookingStatus": "Confirmed"
-  },
-  {
-    "userName": "Anjali Verma",
-    "movieName": "Border 2",
-    "theatre": "INOX",
-    "showDate": "2026-01-26",
-    "seatCount": 4,
-    "pricePerSeat": 300,
-    "totalAmount": 1200,
-    "paymentStatus": "Paid",
-    "bookingStatus": "Confirmed"
-  },
-  {
-    "userName": "Amit Singh",
-    "movieName": "Ikkis",
-    "theatre": "Cinepolis",
-    "showDate": "2026-01-27",
-    "seatCount": 1,
-    "pricePerSeat": 220,
-    "totalAmount": 220,
-    "paymentStatus": "Pending",
-    "bookingStatus": "Waiting"
-  },
-  {
-    "userName": "Neha Gupta",
-    "movieName": "Narshima",
-    "theatre": "Wave Mall Cinema",
-    "showDate": "2026-01-28",
-    "seatCount": 3,
-    "pricePerSeat": 280,
-    "totalAmount": 840,
-    "paymentStatus": "Paid",
-    "bookingStatus": "Confirmed"
-  }
+      "userName": "Rahul Sharma",
+      "movieName": "Dhurandar",
+      "theatre": "PVR Cinemas",
+      "showDate": "2026-01-25",
+      "seatCount": 2,
+      "pricePerSeat": 250,
+      "totalAmount": 500,
+      "paymentStatus": "Paid",
+      "bookingStatus": "Confirmed",
+      "id": "fd33"
+    },
+    {
+      "userName": "Anjali Verma",
+      "movieName": "Border 2",
+      "theatre": "INOX",
+      "showDate": "2026-01-26",
+      "seatCount": 4,
+      "pricePerSeat": 300,
+      "totalAmount": 1200,
+      "paymentStatus": "Paid",
+      "bookingStatus": "Confirmed",
+      "id": "84da"
+    },
+    {
+      "userName": "Amit Singh",
+      "movieName": "Ikkis",
+      "theatre": "Cinepolis",
+      "showDate": "2026-01-27",
+      "seatCount": 1,
+      "pricePerSeat": 220,
+      "totalAmount": 220,
+      "paymentStatus": "Pending",
+      "bookingStatus": "Waiting",
+      "id": "27a4"
+    },
+    {
+      "userName": "Neha Gupta",
+      "movieName": "Narshima",
+      "theatre": "Wave Mall Cinema",
+      "showDate": "2026-01-28",
+      "seatCount": 3,
+      "pricePerSeat": 280,
+      "totalAmount": 840,
+      "paymentStatus": "Paid",
+      "bookingStatus": "Confirmed",
+      "id": "1062"
+    },
+    {
+      "id": "3d87",
+      "userName": "sandeep",
+      "userEmail": "deepak@gmail.com",
+      "movieName": "Pushpa",
+      "theatre": "PVR",
+      "showDate": "2026-02-11",
+      "showTime": "09:22",
+      "seatCount": 2,
+      "seats": [
+        "A2",
+        "A7"
+      ],
+      "pricePerSeat": 200,
+      "totalAmount": 400,
+      "paymentStatus": "Paid",
+      "bookingStatus": "Confirmed"
+    }
   ]
 }
