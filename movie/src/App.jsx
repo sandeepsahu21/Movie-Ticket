@@ -8,6 +8,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Mybooking from './pages/Mybooking'
 import BookNow from './pages/BookNow'
+import ProtectedRoute from './component/ProtectedRoute'
 
 const App = () => {
   return (
@@ -19,7 +20,7 @@ const App = () => {
            <Route path='login' element={<Login/>}></Route>
             <Route path='about' element={<About/>}></Route>
             <Route path='contact' element={<Contact/>}></Route>
-            <Route path='Booking' element={<Mybooking/>}></Route>
+            <Route path='Booking' element={<ProtectedRoute><Mybooking/></ProtectedRoute>}></Route>
             <Route path='BookNow' element={<BookNow/>}></Route>
           </Route>
       </Routes>
