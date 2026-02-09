@@ -38,7 +38,7 @@ const Mybooking = () => {
   };
 
   return (
-    <div className="overflow-x-auto p-6">
+    <div className="overflow-x-auto p-6 items-center">
       <h2 className="text-2xl font-bold mb-4 text-red-500">
         🎟️ My Bookings
       </h2>

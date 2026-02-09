@@ -1,13 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Layout from '../component/Layout'
-import Home from '../pages/Home'
-import Signup from '../pages/Signup'
-import Login from '../pages/Login'
-import About from '../pages/About'
-import Contact from '../pages/Contact'
-import Mybooking from './Mybooking'
-import BookNow from '../pages/BookNow'
+import Layout from './component/Layout'
+import Home from './pages/Home'
+import Signup from './pages/Signup'
+import Login from './pages/Login'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Mybooking from './pages/Mybooking'
+import BookNow from './pages/BookNow'
 
 const App = () => {
   return (
